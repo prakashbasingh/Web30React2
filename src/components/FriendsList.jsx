@@ -6,6 +6,12 @@ export default function FriendsList({ friends }) {
     <div className='list-friends container'>
       <h2>My treasured friends:</h2>
       {/* We need to loop over our friends generating a Friend as we go */}
+      {
+        friends.map(fr => {
+          // do we have a friend layin around?
+          return <Friend friend={fr}/>
+        })
+      }
       {/* What does each Friend component need? */}
     </div>
   )
