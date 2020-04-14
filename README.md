@@ -1,4 +1,4 @@
-# React Components and Component State
+# Composing React Components
 
 ## Running this project
 
