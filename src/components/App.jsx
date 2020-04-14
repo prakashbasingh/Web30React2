@@ -14,10 +14,10 @@ export default function App() {
     <div className='app-friends container'>
       <h1>Friends App</h1>
       {/* what does Search need? */}
-      <Search />
+      <Search setSearchTerm={setSearchTerm} />
 
       {/* What does FriendsList need? */}
-      <FriendsList />
+      <FriendsList friends={friends}/>
     </div>
   )
 }
