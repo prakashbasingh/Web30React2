@@ -7,11 +7,9 @@ export default [
     age: 23,
     likes: [
       'hiking',
-      'coding'
-    ],
-    dislikes: [
       'netflix',
       'death metal',
+      'coding',
     ],
     married: true,
     pets: [
@@ -25,11 +23,9 @@ export default [
     age: 27,
     likes: [
       'fishing',
-      'coding'
-    ],
-    dislikes: [
-      'ironing',
+      'sightseeing',
       'heavy metal',
+      'coding',
     ],
     married: false,
     pets: [
@@ -43,11 +39,9 @@ export default [
     age: 21,
     likes: [
       'exotic animals',
-      'coding'
-    ],
-    dislikes: [
       'bird watching',
       'hiking',
+      'coding',
     ],
     married: true,
     pets: [
