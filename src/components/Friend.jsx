@@ -27,7 +27,7 @@ export default function Friend({ friend }) {
           <h3>2- Pets</h3>
 
           {/* What does the PetsList need? */}
-          {/* What is the name of the prop it expects */}
+          {/* What is the exact name of the prop it expects? */}
           {/* Is the pets data around here somewhere so I may pass it? */}
           <PetsList />
         </div>
