@@ -9,10 +9,10 @@ export default function FriendsList({ friends }) {
       {
         friends.map(fr => {
           // do we have a friend layin around?
+          // What does each Friend component need?
           return <Friend key={fr.id} friend={fr}/>
         })
       }
-      {/* What does each Friend component need? */}
     </div>
   )
 }
