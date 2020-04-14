@@ -1,14 +1,18 @@
-import React, { useState } from 'react'
-import friendsData from '../dummy-data/friends'
+import React from 'react'
+import FriendsList from './FriendsList'
+import Search from './Search'
 
-
-export default function App({ }) {
-  const [friends, setFriends] = useState(friendsData)
-  const [searchTerm, setSearchTerm] = useState('')
-
+export default function App() {
+  // we need to keep track of the current search term
+  // we need to keep track of the list of friends
   return (
-    <div className='app-friends'>
-      
+    <div className='app-friends container'>
+      <h1>Friends App</h1>
+      {/* what does Search need? */}
+      <Search />
+
+      {/* What does FriendsList need? */}
+      <FriendsList />
     </div>
   )
 }
