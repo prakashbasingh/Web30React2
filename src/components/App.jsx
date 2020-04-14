@@ -14,9 +14,11 @@ export default function App() {
     <div className='app-friends container'>
       <h1>Friends App</h1>
       {/* what does Search need? */}
+      {/* it wants a callback to update the search term! */}
       <Search setSearchTerm={setSearchTerm} />
 
       {/* What does FriendsList need? */}
+      {/* it wants all the friends data! */}
       <FriendsList friends={friends}/>
     </div>
   )
