@@ -12,7 +12,7 @@ export default function Friend({ friend }) {
           <p>Age: {friend.age}</p>
 
           {/* Display something better in the Married area */}
-          <p>Married: {friend.married}</p>
+          <p>Married: {friend.married ? 'Yes' : 'No'}</p>
           <div>Likes:
             <ul>
               {/* Loop over the friend's likes and generate <li/> elements as you go */}
