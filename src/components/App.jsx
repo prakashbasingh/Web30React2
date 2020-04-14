@@ -10,6 +10,18 @@ export default function App() {
   // we need to keep track of the current search term
   const [searchTerm, setSearchTerm] = useState('')
 
+  const getFilteredFriends = () => {
+    const term = searchTerm.trim()
+    return friends.filter(friend => {
+      if (!term) {
+        return friend
+      }
+      if (friend.name.toLowerCase().includes(term.toLowerCase())) {
+        return friend
+      }
+    })
+  }
+
   return (
     <div className='app-friends container'>
       <h1>Friends App</h1>
@@ -19,7 +31,7 @@ export default function App() {
 
       {/* What does FriendsList need? */}
       {/* it wants all the friends data! */}
-      <FriendsList friends={friends}/>
+      <FriendsList friends={getFilteredFriends()}/>
     </div>
   )
 }
